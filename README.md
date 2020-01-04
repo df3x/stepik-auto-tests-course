@@ -47,6 +47,7 @@ cd selenium-3.141.0
 
 Устанавливается аналогично selenium: распаковать, активировать окружение, перейти в папку с архивом, выполнить python setup.py install.
 
+## Установка драйверов браузеров
 You can download ChromeDriver here: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 Then you have multiple options:
@@ -56,3 +57,8 @@ put it in the same directory as your python script |
 specify the location directly via executable_path
 
 driver = webdriver.Chrome(executable_path='C:/path/to/chromedriver.exe')
+
+## Фиксация пакетов окружения
+pip freeze > requirements.txt
+применение в новом виртуальном окружении:
+pip install -r requirements.txt
